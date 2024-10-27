@@ -44,9 +44,4 @@ if time_to_insert:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered!', icon="✅")
 
-    # Fetch data from Fruityvice API
-    
-    if fruityvice_response.status_code == 200:
-        st.json(fruityvice_response.json())
-    else:
-        st.error("Failed to fetch data from Fruityvice API")
+   
